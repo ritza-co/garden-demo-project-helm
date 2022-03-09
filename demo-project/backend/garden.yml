@@ -1,0 +1,16 @@
+kind: Module
+type: helm
+name: backend
+description: Helm Chart for the backend
+build:
+  dependencies: [backend-image]
+serviceResource:
+  kind: Deployment
+  containerModule: backend-image
+values:
+  image:
+    repository: ${modules.backend-image.outputs.deployment-image-name}
+    tag: ${modules.backend-image.version}
+  ingress:
+    enabled: true
+    paths: ["/hello-backend"]

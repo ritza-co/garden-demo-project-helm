@@ -1,0 +1,11 @@
+kind: Module
+name: frontend-image
+description: Frontend Container Image
+type: container
+tests:
+  - name: unit
+    args: [npm, test]
+  - name: integ
+    args: [npm, run, integ]
+    dependencies:
+      - frontend

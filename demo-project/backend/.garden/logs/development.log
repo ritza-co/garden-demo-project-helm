@@ -1,0 +1,28 @@
+
+[2022-03-09T20:25:51.469Z] -> Created new module config in garden.yml
+
+[2022-03-09T20:25:51.487Z] TypeError: Cannot read property 'base' of undefined
+    at getPluginBases (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/build/src/plugins.js:0)
+    at Object.getPluginBaseNames (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/build/src/plugins.js:0)
+    at /snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/build/src/commands/create/create-module.js:0
+    at Array.map (<anonymous>)
+    at CreateModuleCommand.<anonymous> (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/build/src/commands/create/create-module.js:0)
+    at Generator.next (<anonymous>)
+    at fulfilled (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/build/src/commands/create/create-module.js:0)
+
+[2022-03-09T20:25:51.488Z] 
+See .garden/error.log for detailed error message
+
+[2022-03-09T20:29:22.126Z] -> Created new module config in garden.yml
+
+[2022-03-09T20:29:22.145Z] TypeError: Cannot read property 'base' of undefined
+    at getPluginBases (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/build/src/plugins.js:0)
+    at Object.getPluginBaseNames (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/build/src/plugins.js:0)
+    at /snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/build/src/commands/create/create-module.js:0
+    at Array.map (<anonymous>)
+    at CreateModuleCommand.<anonymous> (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/build/src/commands/create/create-module.js:0)
+    at Generator.next (<anonymous>)
+    at fulfilled (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/build/src/commands/create/create-module.js:0)
+
+[2022-03-09T20:29:22.145Z] 
+See .garden/error.log for detailed error message

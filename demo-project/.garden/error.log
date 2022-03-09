@@ -1,0 +1,560 @@
+
+[2022-03-09T21:41:53.496Z] Error: Unable to run docker command: Command "/Users/shiv/.garden/tools/docker/fa0336ac33b46eb5/docker/docker build -t backend-image:v-7b27ee2117 --build-arg GARDEN_MODULE_VERSION=v-7b27ee2117 /Users/shiv/Downloads/demo-project-helm/demo-project/.garden/build/backend-image" failed with code 1:
+
+   #1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 37B 0.0s done
+#1 DONE 0.1s
+
+#2 [internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/golang:1.8.3-alpine
+#3 ERROR: no match for platform in manifest sha256:1132c209b1018cbedae7011a0bcb9a0a42a572b2a94e517bfb7180c7d90d4a79: not found
+------
+> [internal] load metadata for docker.io/library/golang:1.8.3-alpine:
+------
+failed to solve with frontend dockerfile.v0: failed to create LLB definition: no match for platform in manifest sha256:1132c209b1018cbedae7011a0bcb9a0a42a572b2a94e517bfb7180c7d90d4a79: not found
+    at Object.<anonymous> (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/build/src/plugins/container/helpers.js:0)
+    at Generator.throw (<anonymous>)
+    at rejected (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/build/src/plugins/container/helpers.js:0)
+
+Error Details:
+
+err:
+  detail:
+    cmd: /Users/shiv/.garden/tools/docker/fa0336ac33b46eb5/docker/docker
+    args:
+      - build
+      - '-t'
+      - 'backend-image:v-7b27ee2117'
+      - '--build-arg'
+      - GARDEN_MODULE_VERSION=v-7b27ee2117
+      - >-
+        /Users/shiv/Downloads/demo-project-helm/demo-project/.garden/build/backend-image
+    opts:
+      cwd: >-
+        /Users/shiv/Downloads/demo-project-helm/demo-project/.garden/build/backend-image
+      timeoutSec: 1200
+      ignoreError: false
+      env:
+        USER: shiv
+        COMMAND_MODE: unix2003
+        LOGNAME: shiv
+        PATH: >-
+          /opt/homebrew/opt/openjdk/bin:/Users/shiv/.nvm/versions/node/v10.16.3/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/shiv/personal/web3/sol/stable/solana/bin:/Users/shiv/.local/share/solana/install/active_release/bin:/Applications/Postgres.app/Contents/Versions/9.6/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware
+          Fusion.app/Contents/Public:/Library/Apple/usr/bin:/Applications/Postgres.app/Contents/Versions/9.6/bin:/opt/homebrew/opt/openjdk/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/shiv/personal/web3/sol/stable/solana/bin:/Users/shiv/.local/share/solana/install/active_release/bin:/Users/shiv/.cargo/bin:/Users/shiv/Library/Android/sdk/platform-tools:/Users/shiv/Library/Android/sdk/platform-tools
+        SSH_AUTH_SOCK: /private/tmp/com.apple.launchd.Us6KdymCfJ/Listeners
+        SHELL: /bin/zsh
+        HOME: /Users/shiv
+        TMPDIR: /var/folders/rl/058w2s6d7cg8f2gzjcw8jtwc0000gn/T/
+        XPC_SERVICE_NAME: '0'
+        XPC_FLAGS: '0x0'
+        ORIGINAL_XDG_CURRENT_DESKTOP: undefined
+        PWD: /Users/shiv/Downloads/demo-project-helm/demo-project
+        ANDROID_AVD_HOME: /Users/shiv/.android/avd
+        APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL: 'true'
+        MANPATH: >-
+          /Users/shiv/.nvm/versions/node/v10.16.3/share/man:/opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/opt/homebrew/share/man:
+        INFOPATH: '/opt/homebrew/share/info:/opt/homebrew/share/info:'
+        HOMEBREW_PREFIX: /opt/homebrew
+        ITERM_PROFILE: Default
+        NVM_DIR: /Users/shiv/.nvm
+        NVM_NODEJS_ORG_MIRROR: 'https://nodejs.org/dist'
+        LC_TERMINAL_VERSION: 3.4.15
+        LC_CTYPE: UTF-8
+        TERM: xterm-256color
+        TERM_SESSION_ID: 'w0t1p0:8093EB6E-0F81-43ED-B5B4-8CE96C5218B9'
+        HOMEBREW_CELLAR: /opt/homebrew/Cellar
+        SHLVL: '3'
+        HOMEBREW_REPOSITORY: /opt/homebrew
+        TERM_PROGRAM_VERSION: 1.64.1
+        ANDROID_SDK_ROOT: /Users/shiv/Library/Android/sdk
+        NVM_IOJS_ORG_MIRROR: 'https://iojs.org/dist'
+        PROMPT: >-
+          ${COLOR_USR}%n@%M ${COLOR_DIR}%d
+          ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF}${NEWLINE}%% 
+        NVM_CD_FLAGS: '-q'
+        COLORTERM: truecolor
+        COLORFGBG: 7;0
+        LC_TERMINAL: iTerm2
+        ANDROID_HOME: /Users/shiv/Library/Android/sdk
+        TERM_PROGRAM: vscode
+        ITERM_SESSION_ID: 'w0t1p0:8093EB6E-0F81-43ED-B5B4-8CE96C5218B9'
+        JAVA_HOME: /Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
+        NVM_BIN: /Users/shiv/.nvm/versions/node/v10.16.3/bin
+        LANG: en_GB.UTF-8
+        VSCODE_GIT_IPC_HANDLE: >-
+          /var/folders/rl/058w2s6d7cg8f2gzjcw8jtwc0000gn/T/vscode-git-c5e76f27b4.sock
+        GIT_ASKPASS: >-
+          /Applications/Visual Studio
+          Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh
+        VSCODE_GIT_ASKPASS_NODE: /Applications/Visual Studio Code.app/Contents/MacOS/Electron
+        VSCODE_GIT_ASKPASS_EXTRA_ARGS: '--ms-enable-electron-run-as-node'
+        VSCODE_GIT_ASKPASS_MAIN: >-
+          /Applications/Visual Studio
+          Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js
+        DOCKER_CLI_EXPERIMENTAL: enabled
+        PKG_EXECPATH: /opt/homebrew/Cellar/garden-cli/0.12.35/libexec/garden
+      stdout:
+        readable: false
+        writable: false
+        allowHalfOpen: true
+        matcher: {}
+        overflow: false
+      stderr: ~err~detail~opts~stdout
+    result:
+      code: 1
+      all: >
+        #1 [internal] load build definition from Dockerfile
+
+        #1 transferring dockerfile: 37B 0.0s done
+
+        #1 DONE 0.1s
+
+
+        #2 [internal] load .dockerignore
+
+        #2 transferring context: 2B done
+
+        #2 DONE 0.0s
+
+
+        #3 [internal] load metadata for docker.io/library/golang:1.8.3-alpine
+
+        #3 ERROR: no match for platform in manifest
+        sha256:1132c209b1018cbedae7011a0bcb9a0a42a572b2a94e517bfb7180c7d90d4a79:
+        not found
+
+        ------
+         > [internal] load metadata for docker.io/library/golang:1.8.3-alpine:
+        ------
+
+        failed to solve with frontend dockerfile.v0: failed to create LLB
+        definition: no match for platform in manifest
+        sha256:1132c209b1018cbedae7011a0bcb9a0a42a572b2a94e517bfb7180c7d90d4a79:
+        not found
+      stdout: ''
+      stderr: >
+        #1 [internal] load build definition from Dockerfile
+
+        #1 transferring dockerfile: 37B 0.0s done
+
+        #1 DONE 0.1s
+
+
+        #2 [internal] load .dockerignore
+
+        #2 transferring context: 2B done
+
+        #2 DONE 0.0s
+
+
+        #3 [internal] load metadata for docker.io/library/golang:1.8.3-alpine
+
+        #3 ERROR: no match for platform in manifest
+        sha256:1132c209b1018cbedae7011a0bcb9a0a42a572b2a94e517bfb7180c7d90d4a79:
+        not found
+
+        ------
+         > [internal] load metadata for docker.io/library/golang:1.8.3-alpine:
+        ------
+
+        failed to solve with frontend dockerfile.v0: failed to create LLB
+        definition: no match for platform in manifest
+        sha256:1132c209b1018cbedae7011a0bcb9a0a42a572b2a94e517bfb7180c7d90d4a79:
+        not found
+      proc:
+        connected: false
+        signalCode: null
+        exitCode: 1
+        killed: false
+        spawnfile: /Users/shiv/.garden/tools/docker/fa0336ac33b46eb5/docker/docker
+        spawnargs:
+          - /Users/shiv/.garden/tools/docker/fa0336ac33b46eb5/docker/docker
+          - build
+          - '-t'
+          - 'backend-image:v-7b27ee2117'
+          - '--build-arg'
+          - GARDEN_MODULE_VERSION=v-7b27ee2117
+          - >-
+            /Users/shiv/Downloads/demo-project-helm/demo-project/.garden/build/backend-image
+        pid: 96534
+        stdin:
+          connecting: false
+          readable: false
+          writable: false
+          allowHalfOpen: false
+          server: null
+        stdout:
+          connecting: false
+          readable: false
+          writable: false
+          allowHalfOpen: false
+          server: null
+        stderr:
+          connecting: false
+          readable: false
+          writable: false
+          allowHalfOpen: false
+          server: null
+        stdio:
+          - ~err~detail~result~proc~stdin
+          - ~err~detail~result~proc~stdout
+          - ~err~detail~result~proc~stderr
+    code: 1
+    all: >
+      #1 [internal] load build definition from Dockerfile
+
+      #1 transferring dockerfile: 37B 0.0s done
+
+      #1 DONE 0.1s
+
+
+      #2 [internal] load .dockerignore
+
+      #2 transferring context: 2B done
+
+      #2 DONE 0.0s
+
+
+      #3 [internal] load metadata for docker.io/library/golang:1.8.3-alpine
+
+      #3 ERROR: no match for platform in manifest
+      sha256:1132c209b1018cbedae7011a0bcb9a0a42a572b2a94e517bfb7180c7d90d4a79:
+      not found
+
+      ------
+       > [internal] load metadata for docker.io/library/golang:1.8.3-alpine:
+      ------
+
+      failed to solve with frontend dockerfile.v0: failed to create LLB
+      definition: no match for platform in manifest
+      sha256:1132c209b1018cbedae7011a0bcb9a0a42a572b2a94e517bfb7180c7d90d4a79:
+      not found
+    stdout: ''
+    stderr: >
+      #1 [internal] load build definition from Dockerfile
+
+      #1 transferring dockerfile: 37B 0.0s done
+
+      #1 DONE 0.1s
+
+
+      #2 [internal] load .dockerignore
+
+      #2 transferring context: 2B done
+
+      #2 DONE 0.0s
+
+
+      #3 [internal] load metadata for docker.io/library/golang:1.8.3-alpine
+
+      #3 ERROR: no match for platform in manifest
+      sha256:1132c209b1018cbedae7011a0bcb9a0a42a572b2a94e517bfb7180c7d90d4a79:
+      not found
+
+      ------
+       > [internal] load metadata for docker.io/library/golang:1.8.3-alpine:
+      ------
+
+      failed to solve with frontend dockerfile.v0: failed to create LLB
+      definition: no match for platform in manifest
+      sha256:1132c209b1018cbedae7011a0bcb9a0a42a572b2a94e517bfb7180c7d90d4a79:
+      not found
+    proc: ~err~detail~result~proc
+  type: runtime
+args:
+  - build
+  - '-t'
+  - 'backend-image:v-7b27ee2117'
+  - '--build-arg'
+  - GARDEN_MODULE_VERSION=v-7b27ee2117
+  - >-
+    /Users/shiv/Downloads/demo-project-helm/demo-project/.garden/build/backend-image
+cwd: >-
+  /Users/shiv/Downloads/demo-project-helm/demo-project/.garden/build/backend-image
+
+
+[2022-03-09T21:41:53.540Z] Error: 1 deploy task(s) failed!
+    at Object.<anonymous> (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/build/src/commands/base.js:0)
+    at Generator.next (<anonymous>)
+    at /snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/build/src/commands/base.js:0
+    at new Promise (<anonymous>)
+    at /snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/build/src/commands/base.js:0
+    at Object.handleProcessResults (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/build/src/commands/base.js:0)
+    at DeployCommand.<anonymous> (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/build/src/commands/deploy.js:0)
+    at Generator.next (<anonymous>)
+    at fulfilled (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/build/src/commands/deploy.js:0)
+
+Error Details:
+
+results:
+  build.backend-image:
+    type: build
+    description: building backend-image
+    key: build.backend-image
+    name: backend-image
+    error:
+      detail:
+        err:
+          detail:
+            cmd: /Users/shiv/.garden/tools/docker/fa0336ac33b46eb5/docker/docker
+            args:
+              - build
+              - '-t'
+              - 'backend-image:v-7b27ee2117'
+              - '--build-arg'
+              - GARDEN_MODULE_VERSION=v-7b27ee2117
+              - >-
+                /Users/shiv/Downloads/demo-project-helm/demo-project/.garden/build/backend-image
+            opts:
+              cwd: >-
+                /Users/shiv/Downloads/demo-project-helm/demo-project/.garden/build/backend-image
+              timeoutSec: 1200
+              ignoreError: false
+              env:
+                USER: shiv
+                COMMAND_MODE: unix2003
+                LOGNAME: shiv
+                PATH: >-
+                  /opt/homebrew/opt/openjdk/bin:/Users/shiv/.nvm/versions/node/v10.16.3/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/shiv/personal/web3/sol/stable/solana/bin:/Users/shiv/.local/share/solana/install/active_release/bin:/Applications/Postgres.app/Contents/Versions/9.6/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware
+                  Fusion.app/Contents/Public:/Library/Apple/usr/bin:/Applications/Postgres.app/Contents/Versions/9.6/bin:/opt/homebrew/opt/openjdk/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/shiv/personal/web3/sol/stable/solana/bin:/Users/shiv/.local/share/solana/install/active_release/bin:/Users/shiv/.cargo/bin:/Users/shiv/Library/Android/sdk/platform-tools:/Users/shiv/Library/Android/sdk/platform-tools
+                SSH_AUTH_SOCK: /private/tmp/com.apple.launchd.Us6KdymCfJ/Listeners
+                SHELL: /bin/zsh
+                HOME: /Users/shiv
+                TMPDIR: /var/folders/rl/058w2s6d7cg8f2gzjcw8jtwc0000gn/T/
+                XPC_SERVICE_NAME: '0'
+                XPC_FLAGS: '0x0'
+                ORIGINAL_XDG_CURRENT_DESKTOP: undefined
+                PWD: /Users/shiv/Downloads/demo-project-helm/demo-project
+                ANDROID_AVD_HOME: /Users/shiv/.android/avd
+                APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL: 'true'
+                MANPATH: >-
+                  /Users/shiv/.nvm/versions/node/v10.16.3/share/man:/opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/opt/homebrew/share/man:
+                INFOPATH: '/opt/homebrew/share/info:/opt/homebrew/share/info:'
+                HOMEBREW_PREFIX: /opt/homebrew
+                ITERM_PROFILE: Default
+                NVM_DIR: /Users/shiv/.nvm
+                NVM_NODEJS_ORG_MIRROR: 'https://nodejs.org/dist'
+                LC_TERMINAL_VERSION: 3.4.15
+                LC_CTYPE: UTF-8
+                TERM: xterm-256color
+                TERM_SESSION_ID: 'w0t1p0:8093EB6E-0F81-43ED-B5B4-8CE96C5218B9'
+                HOMEBREW_CELLAR: /opt/homebrew/Cellar
+                SHLVL: '3'
+                HOMEBREW_REPOSITORY: /opt/homebrew
+                TERM_PROGRAM_VERSION: 1.64.1
+                ANDROID_SDK_ROOT: /Users/shiv/Library/Android/sdk
+                NVM_IOJS_ORG_MIRROR: 'https://iojs.org/dist'
+                PROMPT: >-
+                  ${COLOR_USR}%n@%M ${COLOR_DIR}%d
+                  ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF}${NEWLINE}%% 
+                NVM_CD_FLAGS: '-q'
+                COLORTERM: truecolor
+                COLORFGBG: 7;0
+                LC_TERMINAL: iTerm2
+                ANDROID_HOME: /Users/shiv/Library/Android/sdk
+                TERM_PROGRAM: vscode
+                ITERM_SESSION_ID: 'w0t1p0:8093EB6E-0F81-43ED-B5B4-8CE96C5218B9'
+                JAVA_HOME: /Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
+                NVM_BIN: /Users/shiv/.nvm/versions/node/v10.16.3/bin
+                LANG: en_GB.UTF-8
+                VSCODE_GIT_IPC_HANDLE: >-
+                  /var/folders/rl/058w2s6d7cg8f2gzjcw8jtwc0000gn/T/vscode-git-c5e76f27b4.sock
+                GIT_ASKPASS: >-
+                  /Applications/Visual Studio
+                  Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh
+                VSCODE_GIT_ASKPASS_NODE: /Applications/Visual Studio Code.app/Contents/MacOS/Electron
+                VSCODE_GIT_ASKPASS_EXTRA_ARGS: '--ms-enable-electron-run-as-node'
+                VSCODE_GIT_ASKPASS_MAIN: >-
+                  /Applications/Visual Studio
+                  Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js
+                DOCKER_CLI_EXPERIMENTAL: enabled
+                PKG_EXECPATH: /opt/homebrew/Cellar/garden-cli/0.12.35/libexec/garden
+              stdout:
+                readable: false
+                writable: false
+                allowHalfOpen: true
+                matcher: {}
+                overflow: false
+              stderr: ~results~build.backend-image~error~detail~err~detail~opts~stdout
+            result:
+              code: 1
+              all: >
+                #1 [internal] load build definition from Dockerfile
+
+                #1 transferring dockerfile: 37B 0.0s done
+
+                #1 DONE 0.1s
+
+
+                #2 [internal] load .dockerignore
+
+                #2 transferring context: 2B done
+
+                #2 DONE 0.0s
+
+
+                #3 [internal] load metadata for
+                docker.io/library/golang:1.8.3-alpine
+
+                #3 ERROR: no match for platform in manifest
+                sha256:1132c209b1018cbedae7011a0bcb9a0a42a572b2a94e517bfb7180c7d90d4a79:
+                not found
+
+                ------
+                 > [internal] load metadata for docker.io/library/golang:1.8.3-alpine:
+                ------
+
+                failed to solve with frontend dockerfile.v0: failed to create
+                LLB definition: no match for platform in manifest
+                sha256:1132c209b1018cbedae7011a0bcb9a0a42a572b2a94e517bfb7180c7d90d4a79:
+                not found
+              stdout: ''
+              stderr: >
+                #1 [internal] load build definition from Dockerfile
+
+                #1 transferring dockerfile: 37B 0.0s done
+
+                #1 DONE 0.1s
+
+
+                #2 [internal] load .dockerignore
+
+                #2 transferring context: 2B done
+
+                #2 DONE 0.0s
+
+
+                #3 [internal] load metadata for
+                docker.io/library/golang:1.8.3-alpine
+
+                #3 ERROR: no match for platform in manifest
+                sha256:1132c209b1018cbedae7011a0bcb9a0a42a572b2a94e517bfb7180c7d90d4a79:
+                not found
+
+                ------
+                 > [internal] load metadata for docker.io/library/golang:1.8.3-alpine:
+                ------
+
+                failed to solve with frontend dockerfile.v0: failed to create
+                LLB definition: no match for platform in manifest
+                sha256:1132c209b1018cbedae7011a0bcb9a0a42a572b2a94e517bfb7180c7d90d4a79:
+                not found
+              proc:
+                connected: false
+                signalCode: null
+                exitCode: 1
+                killed: false
+                spawnfile: >-
+                  /Users/shiv/.garden/tools/docker/fa0336ac33b46eb5/docker/docker
+                spawnargs:
+                  - >-
+                    /Users/shiv/.garden/tools/docker/fa0336ac33b46eb5/docker/docker
+                  - build
+                  - '-t'
+                  - 'backend-image:v-7b27ee2117'
+                  - '--build-arg'
+                  - GARDEN_MODULE_VERSION=v-7b27ee2117
+                  - >-
+                    /Users/shiv/Downloads/demo-project-helm/demo-project/.garden/build/backend-image
+                pid: 96534
+                stdin:
+                  connecting: false
+                  readable: false
+                  writable: false
+                  allowHalfOpen: false
+                  server: null
+                stdout:
+                  connecting: false
+                  readable: false
+                  writable: false
+                  allowHalfOpen: false
+                  server: null
+                stderr:
+                  connecting: false
+                  readable: false
+                  writable: false
+                  allowHalfOpen: false
+                  server: null
+                stdio:
+                  - >-
+                    ~results~build.backend-image~error~detail~err~detail~result~proc~stdin
+                  - >-
+                    ~results~build.backend-image~error~detail~err~detail~result~proc~stdout
+                  - >-
+                    ~results~build.backend-image~error~detail~err~detail~result~proc~stderr
+            code: 1
+            all: >
+              #1 [internal] load build definition from Dockerfile
+
+              #1 transferring dockerfile: 37B 0.0s done
+
+              #1 DONE 0.1s
+
+
+              #2 [internal] load .dockerignore
+
+              #2 transferring context: 2B done
+
+              #2 DONE 0.0s
+
+
+              #3 [internal] load metadata for
+              docker.io/library/golang:1.8.3-alpine
+
+              #3 ERROR: no match for platform in manifest
+              sha256:1132c209b1018cbedae7011a0bcb9a0a42a572b2a94e517bfb7180c7d90d4a79:
+              not found
+
+              ------
+               > [internal] load metadata for docker.io/library/golang:1.8.3-alpine:
+              ------
+
+              failed to solve with frontend dockerfile.v0: failed to create LLB
+              definition: no match for platform in manifest
+              sha256:1132c209b1018cbedae7011a0bcb9a0a42a572b2a94e517bfb7180c7d90d4a79:
+              not found
+            stdout: ''
+            stderr: >
+              #1 [internal] load build definition from Dockerfile
+
+              #1 transferring dockerfile: 37B 0.0s done
+
+              #1 DONE 0.1s
+
+
+              #2 [internal] load .dockerignore
+
+              #2 transferring context: 2B done
+
+              #2 DONE 0.0s
+
+
+              #3 [internal] load metadata for
+              docker.io/library/golang:1.8.3-alpine
+
+              #3 ERROR: no match for platform in manifest
+              sha256:1132c209b1018cbedae7011a0bcb9a0a42a572b2a94e517bfb7180c7d90d4a79:
+              not found
+
+              ------
+               > [internal] load metadata for docker.io/library/golang:1.8.3-alpine:
+              ------
+
+              failed to solve with frontend dockerfile.v0: failed to create LLB
+              definition: no match for platform in manifest
+              sha256:1132c209b1018cbedae7011a0bcb9a0a42a572b2a94e517bfb7180c7d90d4a79:
+              not found
+            proc: ~results~build.backend-image~error~detail~err~detail~result~proc
+          type: runtime
+        args: ~results~build.backend-image~error~detail~err~detail~args
+        cwd: >-
+          /Users/shiv/Downloads/demo-project-helm/demo-project/.garden/build/backend-image
+      type: runtime
+    startedAt: '2022-03-09T21:41:48.216Z'
+    completedAt: '2022-03-09T21:41:53.453Z'
+    batchId: 8e082159-cc65-457c-b7a3-4ac9c4c858f7
+    version: v-7b27ee2117
+

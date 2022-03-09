@@ -1,0 +1,9 @@
+kind: Module
+name: backend-image
+description: Backend Container Image
+type: container
+variables:
+  ingressPath: /hello-backend
+tasks:
+  - name: test
+    command: ["sh", "-c", "echo task output"]

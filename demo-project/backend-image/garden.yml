@@ -7,3 +7,4 @@ variables:
 tasks:
   - name: test
     command: ["sh", "-c", "echo task output"]
+extraFlags: ["--platform", "linux/amd64"]
